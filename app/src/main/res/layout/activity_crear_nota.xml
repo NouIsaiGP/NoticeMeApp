@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".CrearNota">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/campana" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="15dp"
+        android:text="Recordatorio"
+        android:textColor="@color/cardview_light_background"
+        android:textSize="40dp"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/instruciones"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Llene el formulario para hacer un nuevo recordatorio"
+        android:textColor="@color/cardview_light_background"
+        android:textSize="16dp"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/Edi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Escriba el nombre de la notificacion"
+        android:textColor="@color/cardview_light_background"
+        android:textSize="16dp"/>
+
+    <EditText
+        android:id="@+id/txtNombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Ejemplo...  Comprar Leche"
+        android:textColor="@color/BLANCO"
+        android:textColorHint="@color/BLANCO"
+        android:text=""
+        />
+
+    <EditText
+        android:id="@+id/txtDescripcion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+            android:hint="Descripcion"
+        android:textColor="@color/BLANCO"
+        android:textColorHint="@color/BLANCO"
+        android:text=""
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="40dp"/>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="57dp"
+        android:background="@drawable/gradient">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/gradient"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/in_date"
+                android:layout_width="200dp"
+                android:layout_height="60dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:editable="false" />
+
+            <Button
+                android:id="@+id/btn_date"
+                android:layout_width="195dp"
+                android:layout_height="60dp"
+                android:layout_alignBottom="@+id/in_date"
+                android:layout_toEndOf="@+id/in_date"
+                android:layout_toRightOf="@+id/in_date"
+                android:text="Fecha" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="63dp"
+        android:layout_marginTop="40dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:background="@drawable/gradient">
+
+            <EditText
+                android:id="@+id/in_time"
+                android:layout_width="199dp"
+                android:layout_height="63dp"
+                android:layout_below="@+id/in_date"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:editable="false" />
+
+            <Button
+                android:id="@+id/btn_time"
+                android:layout_width="191dp"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/btn_date"
+                android:layout_alignStart="@+id/btn_date"
+                android:layout_alignLeft="@+id/btn_date"
+                android:text="Hora" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/btnAgregarNota"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Agregar"
+        android:onClick="CrearNota"/>
+
+</LinearLayout>

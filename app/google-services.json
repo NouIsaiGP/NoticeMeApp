@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "48100503267",
+    "project_id": "noticeme-senpai",
+    "storage_bucket": "noticeme-senpai.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:48100503267:android:010310e2b37a8245ea1fd6",
+        "android_client_info": {
+          "package_name": "com.noticeme"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "48100503267-89gphm5vr9vvup4et2vmsupsf94gjs3m.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCYeFgZbp4dXsqYpHKr37FifUFg9_PUonE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "48100503267-89gphm5vr9vvup4et2vmsupsf94gjs3m.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

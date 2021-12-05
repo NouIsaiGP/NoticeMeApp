@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">NoticeMe</string>
+    <string name="prefs_files">com.noticeme.PREFERENCE_FILE_KEY</string>
+</resources>
